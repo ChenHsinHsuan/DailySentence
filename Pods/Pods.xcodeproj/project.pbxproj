@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048FA463AA794627575085EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761F638FCA7338AD9DC4BA8F /* UIKit.framework */; };
+		0BB1445652A52242E48DC48E /* Pods-Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BC3703165EB3845E7CBD6B /* Pods-Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		128BF3E63952E241ECF54A34 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65E369D16CBA20DE59D110C /* MediaPlayer.framework */; };
+		1680F651812FD6DB90BD72AB /* Pods-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1346369693DDDBF028A391 /* Pods-MBProgressHUD-dummy.m */; };
+		201DC519EA7317F90E681765 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516C0A1452D9868FD1E8FDC /* LoadingView.swift */; };
+		261CAAC7893BDE3340CA54E0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168B85C87564DDD5A68E5CA /* AudioPlayer.swift */; };
+		2FEB1F08B501372BB619220C /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC63C385B64F5DF2202918F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3136C5C3FF0729DD487FD028 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD951D06E67D4003D2F309 /* DesignableLabel.swift */; };
+		34F688D411757806B7B5CEC5 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FE00ECCA16A7E6CC811724 /* Pods-dummy.m */; };
+		3C11AE4177FC41CD314DEE6F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044F8B5778F3CC83E738217 /* TransitionZoom.swift */; };
+		3DC5D0B60C53EB130FC94FC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2B23BE9B1850C04BCAAC1 /* Foundation.framework */; };
+		4912951305AD2F5FC07C8C28 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAA5E217BBF8373A2C5305 /* DesignableTabBarController.swift */; };
+		4C612C3A98A4941B30E0331A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A85EBB89960F965B5F1604 /* SystemConfiguration.framework */; };
+		59A2D0E9B5FBDD991A6BC13D /* Pods-Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE5954E07258561FE3C302E /* Pods-Spring-dummy.m */; };
+		5E3BFB45E0CDF2381535FE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2B23BE9B1850C04BCAAC1 /* Foundation.framework */; };
+		65CD8078FE6C7591ECD5D5DA /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15288CB15BECD51B678BE2 /* DesignableTextView.swift */; };
+		67F29B5CFBF85BD2F29CC1CD /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC0E2B586F3E196DF963B1 /* SpringImageView.swift */; };
+		6866325D9A6C6F9A6099C101 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC729F35A8064034D274EC /* AutoTextView.swift */; };
+		6C822E5567806D3AE3798FD9 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1C888697966F527A5715C9 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D6AEB1161AF4369840FF99 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF577CD65716ADD338F21863 /* SpringButton.swift */; };
+		79B7A34712842A0045D3EFE8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6B1674F1E7C47FDEBC9DE /* ImageLoader.swift */; };
+		7B3741C2EBB5F2B61DF0287F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFC6611F745350029B04FB2 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7CD1DFC31CDF93B4CDD76CDE /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF26D33F159CF2524972D71 /* BlurView.swift */; };
+		8118C5F0F106B2F0DDA3F92E /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0AA92D6B3863C179D22CE /* SpringLabel.swift */; };
+		8168B589B31BD620DFFCE7B2 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CC4C9CB871D6AAC819F4E4 /* DesignableTextField.swift */; };
+		84D47EFE9B3C5FB71B19E5A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2B23BE9B1850C04BCAAC1 /* Foundation.framework */; };
+		875219D05FB9DAF2B2D4DA5C /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C95D3A5BA3010785EA1BA95 /* AsyncImageView.swift */; };
+		940A6B1208AC144D459C30B5 /* AudioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592C83A5C0F57F6A8C84A2C /* AudioItem.swift */; };
+		9A0437285C8403259064267B /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA08BDF922A86355B801C6F /* DesignableImageView.swift */; };
+		9B0223C022944EF5219925FA /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8409D33148FB27F3D79BC5D /* LoadingView.xib */; };
+		9DB9D37CC752F31703504D72 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E21A17B70D7834FA260758 /* KeyboardLayoutConstraint.swift */; };
+		A1D5ACEAAF82519AE827FDDF /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1A294227C0FC7B26ACC4D9 /* SpringTextView.swift */; };
+		AE3209FBA8D840E2E40A9623 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50234DF343BA21D711FB562A /* UnwindSegue.swift */; };
+		B0B18E3F38FC5A27F3DC304A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC67283DF63D9F6F272A9285 /* AVFoundation.framework */; };
+		B0DD238F56E2FB8F39CE8BFE /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEADD96C3835734EC7AAA634 /* AsyncButton.swift */; };
+		B516E2B241BA031A442E83B2 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248A6BBB7DA13DA72CCFC401 /* Spring.swift */; };
+		B549A75544480CE5618EA849 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAAAC8AB903A06E4DBAC2F /* SpringAnimation.swift */; };
+		BA80CE30F9648927B756E6A6 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E73BC8A8B43678EC466D7 /* TransitionManager.swift */; };
+		C5454FBBC1C24406533BD303 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5CEE0EABEA2928EEEE2957 /* SpringView.swift */; };
+		C824D55C4BEF7A872841ACC1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7D9CF804684DA8C4E1734 /* Reachability.swift */; };
+		CB9C5C42834FAC3AFBC53879 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AADD519DD1211E1BFA70195 /* Images.xcassets */; };
+		D1D1438B20C3E6E6A3E78D8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8054E7E66AA7C03D68F406C /* CoreGraphics.framework */; };
+		D2307355442F9CF23E0BDBFB /* Pods-MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3CC56E09B95163328AFBF37 /* Pods-MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD7DDEBAA2732F80253DE9A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2B23BE9B1850C04BCAAC1 /* Foundation.framework */; };
+		E68725E4B95EA30A7B6C5718 /* Pods-KDEAudioPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3ACDF08CD461A2260FCC4E /* Pods-KDEAudioPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB00B6C599FA0FE3FAE03427 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608270AAE52E5307F41E401 /* DesignableButton.swift */; };
+		EC6C0D997181DF342AE8143D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD12A2450A742686E6DBEC2 /* DesignableView.swift */; };
+		EE0368A4F9803B6FC15803D6 /* Pods-KDEAudioPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D384951912A56CDCE9ED05 /* Pods-KDEAudioPlayer-dummy.m */; };
+		FC737DA9CA0038275B0BA6C8 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243953990478F06AC430BA7 /* SoundPlayer.swift */; };
+		FE2E6C1715A67332BA1730FF /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CD4245B10B32DE24BFACF5 /* SpringTextField.swift */; };
+		FE51AE0D1ED99796E2F9D260 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE5836F26CA41998C5A332E /* Misc.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B6A272B5DC58F178ADCF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9610576D1C914146176F69C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C53AB09B22A4D17CC8B9DDF5;
+			remoteInfo = "Pods-MBProgressHUD";
+		};
+		538239A92742BBAB1AB3AE3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9610576D1C914146176F69C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E695A33D02882412A30EE89;
+			remoteInfo = "Pods-KDEAudioPlayer";
+		};
+		AD036793038B7ABE7CBE4442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9610576D1C914146176F69C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86A88C3944586399044560CC;
+			remoteInfo = "Pods-Spring";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A87215FE8CF071D58C03EF5 /* Pods-MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MBProgressHUD.modulemap"; sourceTree = "<group>"; };
+		0C425B0B29257417D4046FD8 /* Pods-KDEAudioPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDEAudioPlayer.modulemap"; sourceTree = "<group>"; };
+		10354C443763DFFF4337119D /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		120E73BC8A8B43678EC466D7 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		16EAAAC8AB903A06E4DBAC2F /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
+		1AA08BDF922A86355B801C6F /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
+		1AC63C385B64F5DF2202918F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1CD12A2450A742686E6DBEC2 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		1ECC729F35A8064034D274EC /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
+		1F9A690C4B7B6A7B23C6CFC6 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		209F7076A80D780B33138F0C /* Pods-Spring-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spring-Private.xcconfig"; sourceTree = "<group>"; };
+		248A6BBB7DA13DA72CCFC401 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
+		27B7EC9AAABC4F925906EBD6 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		307B68E2FA7E437F6A6E669D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3168B85C87564DDD5A68E5CA /* AudioPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioPlayer.swift; path = AudioPlayer/AudioPlayer/AudioPlayer.swift; sourceTree = "<group>"; };
+		32415545B8A97FC85CFB22B7 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.2.2/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		3608270AAE52E5307F41E401 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
+		36A82C7B0417C742FFAE8357 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3F5CEE0EABEA2928EEEE2957 /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
+		42BDC4B691DB75215A85B63B /* Pods-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		437DFE418E219129833411C1 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		4B6E95E50A551733EFA0EFA4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		50234DF343BA21D711FB562A /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		50BC3703165EB3845E7CBD6B /* Pods-Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spring-umbrella.h"; sourceTree = "<group>"; };
+		53FE00ECCA16A7E6CC811724 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		56D384951912A56CDCE9ED05 /* Pods-KDEAudioPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDEAudioPlayer-dummy.m"; sourceTree = "<group>"; };
+		58CC4C9CB871D6AAC819F4E4 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
+		5A974BB88D738ADBFCE7BA39 /* Pods-KDEAudioPlayer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDEAudioPlayer-Private.xcconfig"; sourceTree = "<group>"; };
+		5B1C888697966F527A5715C9 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		5C95D3A5BA3010785EA1BA95 /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		5F1A294227C0FC7B26ACC4D9 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		5FD6B1674F1E7C47FDEBC9DE /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		66DD951D06E67D4003D2F309 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
+		68142F202C09C235EBBA8152 /* Pods-KDEAudioPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDEAudioPlayer-prefix.pch"; sourceTree = "<group>"; };
+		6DDAA5E217BBF8373A2C5305 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		701F3A86F4412E1B3033340F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FF405C5B842D5812ADFE86 /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73569022C0709BB8CF424CBF /* Pods-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		73FD0E870BAED2F01190BA2C /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7592C83A5C0F57F6A8C84A2C /* AudioItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioItem.swift; path = AudioPlayer/AudioPlayer/AudioItem.swift; sourceTree = "<group>"; };
+		761F638FCA7338AD9DC4BA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7AADD519DD1211E1BFA70195 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		7DF26D33F159CF2524972D71 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		7FEB27B1006D110491C5EAF3 /* Pods-Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spring-prefix.pch"; sourceTree = "<group>"; };
+		87D0AA92D6B3863C179D22CE /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
+		8A2AB0F2D5DED96F0039C4B6 /* KDEAudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDEAudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFC6611F745350029B04FB2 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9516C0A1452D9868FD1E8FDC /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
+		9A4F1C22F6533F3E2857F205 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C3ACDF08CD461A2260FCC4E /* Pods-KDEAudioPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDEAudioPlayer-umbrella.h"; sourceTree = "<group>"; };
+		A3CC56E09B95163328AFBF37 /* Pods-MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		B6C468AAF9A325C5B2C05AC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9CD4245B10B32DE24BFACF5 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
+		BC67283DF63D9F6F272A9285 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		BDB7D9CF804684DA8C4E1734 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = AudioPlayer/AudioPlayer/Reachability.swift; sourceTree = "<group>"; };
+		BDE5836F26CA41998C5A332E /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		BEA2A78C95FF55D6E7CAE634 /* Pods-Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Spring.modulemap"; sourceTree = "<group>"; };
+		BEADD96C3835734EC7AAA634 /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
+		C0D2B23BE9B1850C04BCAAC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C339DADDC7939BC346B39D24 /* Pods-Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spring.xcconfig"; sourceTree = "<group>"; };
+		C8054E7E66AA7C03D68F406C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C8409D33148FB27F3D79BC5D /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		CBE5954E07258561FE3C302E /* Pods-Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spring-dummy.m"; sourceTree = "<group>"; };
+		CF276F6680EC7FA53EBBCC04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		D044F8B5778F3CC83E738217 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
+		D3A85EBB89960F965B5F1604 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D7E21A17B70D7834FA260758 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		DC3C53F5176B60B21DC0CED5 /* Pods-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		DCBC0E2B586F3E196DF963B1 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
+		E243953990478F06AC430BA7 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
+		E65E369D16CBA20DE59D110C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		EA277C18240921D643F88D1B /* Pods-KDEAudioPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDEAudioPlayer.xcconfig"; sourceTree = "<group>"; };
+		EEEF1C86F2EFFDBB086DB47D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1346369693DDDBF028A391 /* Pods-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		F5389CC661402EECA1B9C3A2 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		F7DD7A42C53C5FA237C232E6 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA15288CB15BECD51B678BE2 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		FF577CD65716ADD338F21863 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30C0FAB7C99ECB0D3DF0008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7DDEBAA2732F80253DE9A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CDE7EF92522DB17D14F355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC5D0B60C53EB130FC94FC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99295CC04C8EED13F31BE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D1438B20C3E6E6A3E78D8B /* CoreGraphics.framework in Frameworks */,
+				5E3BFB45E0CDF2381535FE02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9C70EBA1D0255DE4958466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B18E3F38FC5A27F3DC304A /* AVFoundation.framework in Frameworks */,
+				84D47EFE9B3C5FB71B19E5A2 /* Foundation.framework in Frameworks */,
+				128BF3E63952E241ECF54A34 /* MediaPlayer.framework in Frameworks */,
+				4C612C3A98A4941B30E0331A /* SystemConfiguration.framework in Frameworks */,
+				048FA463AA794627575085EF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FE291FE2C3A540296748B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D2EEC77B5950C6143C36D55 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		100C1FCF6804B6C131FC3D9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AADD519DD1211E1BFA70195 /* Images.xcassets */,
+				C8409D33148FB27F3D79BC5D /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		30BCF0237353775C5CFA6B97 /* KDEAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7592C83A5C0F57F6A8C84A2C /* AudioItem.swift */,
+				3168B85C87564DDD5A68E5CA /* AudioPlayer.swift */,
+				BDB7D9CF804684DA8C4E1734 /* Reachability.swift */,
+				3E9DBE44BFCBB7780864E052 /* Support Files */,
+			);
+			path = KDEAudioPlayer;
+			sourceTree = "<group>";
+		};
+		3E9DBE44BFCBB7780864E052 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				307B68E2FA7E437F6A6E669D /* Info.plist */,
+				0C425B0B29257417D4046FD8 /* Pods-KDEAudioPlayer.modulemap */,
+				EA277C18240921D643F88D1B /* Pods-KDEAudioPlayer.xcconfig */,
+				5A974BB88D738ADBFCE7BA39 /* Pods-KDEAudioPlayer-Private.xcconfig */,
+				56D384951912A56CDCE9ED05 /* Pods-KDEAudioPlayer-dummy.m */,
+				68142F202C09C235EBBA8152 /* Pods-KDEAudioPlayer-prefix.pch */,
+				9C3ACDF08CD461A2260FCC4E /* Pods-KDEAudioPlayer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-KDEAudioPlayer";
+			sourceTree = "<group>";
+		};
+		4D2EEC77B5950C6143C36D55 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BC67283DF63D9F6F272A9285 /* AVFoundation.framework */,
+				C8054E7E66AA7C03D68F406C /* CoreGraphics.framework */,
+				C0D2B23BE9B1850C04BCAAC1 /* Foundation.framework */,
+				E65E369D16CBA20DE59D110C /* MediaPlayer.framework */,
+				D3A85EBB89960F965B5F1604 /* SystemConfiguration.framework */,
+				761F638FCA7338AD9DC4BA8F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4E9BAFC6D5410F431DEE3371 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF1C86F2EFFDBB086DB47D /* Info.plist */,
+				BEA2A78C95FF55D6E7CAE634 /* Pods-Spring.modulemap */,
+				C339DADDC7939BC346B39D24 /* Pods-Spring.xcconfig */,
+				209F7076A80D780B33138F0C /* Pods-Spring-Private.xcconfig */,
+				CBE5954E07258561FE3C302E /* Pods-Spring-dummy.m */,
+				7FEB27B1006D110491C5EAF3 /* Pods-Spring-prefix.pch */,
+				50BC3703165EB3845E7CBD6B /* Pods-Spring-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Spring";
+			sourceTree = "<group>";
+		};
+		5394A02E3140A773C27488FB /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				61F66F26EF830608BFF4E3B3 /* Frameworks */,
+			);
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		61F66F26EF830608BFF4E3B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32415545B8A97FC85CFB22B7 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66DD1092ACD90F7544E361E0 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				BEADD96C3835734EC7AAA634 /* AsyncButton.swift */,
+				5C95D3A5BA3010785EA1BA95 /* AsyncImageView.swift */,
+				1ECC729F35A8064034D274EC /* AutoTextView.swift */,
+				7DF26D33F159CF2524972D71 /* BlurView.swift */,
+				3608270AAE52E5307F41E401 /* DesignableButton.swift */,
+				1AA08BDF922A86355B801C6F /* DesignableImageView.swift */,
+				66DD951D06E67D4003D2F309 /* DesignableLabel.swift */,
+				6DDAA5E217BBF8373A2C5305 /* DesignableTabBarController.swift */,
+				58CC4C9CB871D6AAC819F4E4 /* DesignableTextField.swift */,
+				FA15288CB15BECD51B678BE2 /* DesignableTextView.swift */,
+				1CD12A2450A742686E6DBEC2 /* DesignableView.swift */,
+				5FD6B1674F1E7C47FDEBC9DE /* ImageLoader.swift */,
+				D7E21A17B70D7834FA260758 /* KeyboardLayoutConstraint.swift */,
+				9516C0A1452D9868FD1E8FDC /* LoadingView.swift */,
+				BDE5836F26CA41998C5A332E /* Misc.swift */,
+				E243953990478F06AC430BA7 /* SoundPlayer.swift */,
+				248A6BBB7DA13DA72CCFC401 /* Spring.swift */,
+				16EAAAC8AB903A06E4DBAC2F /* SpringAnimation.swift */,
+				FF577CD65716ADD338F21863 /* SpringButton.swift */,
+				DCBC0E2B586F3E196DF963B1 /* SpringImageView.swift */,
+				87D0AA92D6B3863C179D22CE /* SpringLabel.swift */,
+				B9CD4245B10B32DE24BFACF5 /* SpringTextField.swift */,
+				5F1A294227C0FC7B26ACC4D9 /* SpringTextView.swift */,
+				3F5CEE0EABEA2928EEEE2957 /* SpringView.swift */,
+				120E73BC8A8B43678EC466D7 /* TransitionManager.swift */,
+				D044F8B5778F3CC83E738217 /* TransitionZoom.swift */,
+				50234DF343BA21D711FB562A /* UnwindSegue.swift */,
+				100C1FCF6804B6C131FC3D9A /* Resources */,
+				4E9BAFC6D5410F431DEE3371 /* Support Files */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		77DE752EFE10F7B85D1FF2AF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1AC63C385B64F5DF2202918F /* MBProgressHUD.h */,
+				8CFC6611F745350029B04FB2 /* MBProgressHUD.m */,
+				E749DC284B7C9B2EFB42F863 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B7EEFFA1518B11CB9F346872 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5394A02E3140A773C27488FB /* Google-Mobile-Ads-SDK */,
+				30BCF0237353775C5CFA6B97 /* KDEAudioPlayer */,
+				77DE752EFE10F7B85D1FF2AF /* MBProgressHUD */,
+				66DD1092ACD90F7544E361E0 /* Spring */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C00A0415E1B39435580CC62F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1D47F23844805B8C776058F /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C1D47F23844805B8C776058F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A4F1C22F6533F3E2857F205 /* Info.plist */,
+				73FD0E870BAED2F01190BA2C /* Pods.modulemap */,
+				F7DD7A42C53C5FA237C232E6 /* Pods-acknowledgements.markdown */,
+				10354C443763DFFF4337119D /* Pods-acknowledgements.plist */,
+				53FE00ECCA16A7E6CC811724 /* Pods-dummy.m */,
+				1F9A690C4B7B6A7B23C6CFC6 /* Pods-environment.h */,
+				F5389CC661402EECA1B9C3A2 /* Pods-frameworks.sh */,
+				437DFE418E219129833411C1 /* Pods-resources.sh */,
+				5B1C888697966F527A5715C9 /* Pods-umbrella.h */,
+				4B6E95E50A551733EFA0EFA4 /* Pods.debug.xcconfig */,
+				CF276F6680EC7FA53EBBCC04 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		C713D6BE05B8B911C2ABC036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A2AB0F2D5DED96F0039C4B6 /* KDEAudioPlayer.framework */,
+				27B7EC9AAABC4F925906EBD6 /* MBProgressHUD.framework */,
+				701F3A86F4412E1B3033340F /* Pods.framework */,
+				72FF405C5B842D5812ADFE86 /* Spring.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E749DC284B7C9B2EFB42F863 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6C468AAF9A325C5B2C05AC0 /* Info.plist */,
+				0A87215FE8CF071D58C03EF5 /* Pods-MBProgressHUD.modulemap */,
+				DC3C53F5176B60B21DC0CED5 /* Pods-MBProgressHUD.xcconfig */,
+				73569022C0709BB8CF424CBF /* Pods-MBProgressHUD-Private.xcconfig */,
+				EF1346369693DDDBF028A391 /* Pods-MBProgressHUD-dummy.m */,
+				42BDC4B691DB75215A85B63B /* Pods-MBProgressHUD-prefix.pch */,
+				A3CC56E09B95163328AFBF37 /* Pods-MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		FD6794FCAEBDB591807FBA7B = {
+			isa = PBXGroup;
+			children = (
+				36A82C7B0417C742FFAE8357 /* Podfile */,
+				04FE291FE2C3A540296748B7 /* Frameworks */,
+				B7EEFFA1518B11CB9F346872 /* Pods */,
+				C713D6BE05B8B911C2ABC036 /* Products */,
+				C00A0415E1B39435580CC62F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		188BCE1D11D001F445207220 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB1445652A52242E48DC48E /* Pods-Spring-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B002FFC93C63F1F67C1AA92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C822E5567806D3AE3798FD9 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F861114FDCCDE4DE93EB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68725E4B95EA30A7B6C5718 /* Pods-KDEAudioPlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49FAD0A1BA0C983EE1596F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEB1F08B501372BB619220C /* MBProgressHUD.h in Headers */,
+				D2307355442F9CF23E0BDBFB /* Pods-MBProgressHUD-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C67B52D230B3D6B4565480F /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA01220285B8A8FBEF80986 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				C77E5B2417F1FBC87E45C373 /* Sources */,
+				A30C0FAB7C99ECB0D3DF0008 /* Frameworks */,
+				5B002FFC93C63F1F67C1AA92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E6F37020D1D6E921724ADED /* PBXTargetDependency */,
+				9B18A3F9E7EC970F729BCF00 /* PBXTargetDependency */,
+				39C6C01F079890BCA7B81CA4 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 701F3A86F4412E1B3033340F /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		86A88C3944586399044560CC /* Pods-Spring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD84ACC9FDFD9287BB16FE39 /* Build configuration list for PBXNativeTarget "Pods-Spring" */;
+			buildPhases = (
+				EFC39BF72AA16144881D6417 /* Sources */,
+				F1CDE7EF92522DB17D14F355 /* Frameworks */,
+				0A134A43D2896E1E59E1627B /* Resources */,
+				188BCE1D11D001F445207220 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Spring";
+			productName = "Pods-Spring";
+			productReference = 72FF405C5B842D5812ADFE86 /* Spring.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E695A33D02882412A30EE89 /* Pods-KDEAudioPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57108F45510960CDCA6003B5 /* Build configuration list for PBXNativeTarget "Pods-KDEAudioPlayer" */;
+			buildPhases = (
+				5334B3D059FC119E763DF75F /* Sources */,
+				FC9C70EBA1D0255DE4958466 /* Frameworks */,
+				779F861114FDCCDE4DE93EB1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KDEAudioPlayer";
+			productName = "Pods-KDEAudioPlayer";
+			productReference = 8A2AB0F2D5DED96F0039C4B6 /* KDEAudioPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C53AB09B22A4D17CC8B9DDF5 /* Pods-MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 014D220BE609A79253AF6B0D /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */;
+			buildPhases = (
+				BC474896CC6AF1FDBEB919DD /* Sources */,
+				F99295CC04C8EED13F31BE30 /* Frameworks */,
+				F49FAD0A1BA0C983EE1596F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MBProgressHUD";
+			productName = "Pods-MBProgressHUD";
+			productReference = 27B7EC9AAABC4F925906EBD6 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9610576D1C914146176F69C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = BE823C1CE6AFED3D28592329 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD6794FCAEBDB591807FBA7B;
+			productRefGroup = C713D6BE05B8B911C2ABC036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C67B52D230B3D6B4565480F /* Pods */,
+				8E695A33D02882412A30EE89 /* Pods-KDEAudioPlayer */,
+				C53AB09B22A4D17CC8B9DDF5 /* Pods-MBProgressHUD */,
+				86A88C3944586399044560CC /* Pods-Spring */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A134A43D2896E1E59E1627B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9C5C42834FAC3AFBC53879 /* Images.xcassets in Resources */,
+				9B0223C022944EF5219925FA /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5334B3D059FC119E763DF75F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940A6B1208AC144D459C30B5 /* AudioItem.swift in Sources */,
+				261CAAC7893BDE3340CA54E0 /* AudioPlayer.swift in Sources */,
+				EE0368A4F9803B6FC15803D6 /* Pods-KDEAudioPlayer-dummy.m in Sources */,
+				C824D55C4BEF7A872841ACC1 /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC474896CC6AF1FDBEB919DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3741C2EBB5F2B61DF0287F /* MBProgressHUD.m in Sources */,
+				1680F651812FD6DB90BD72AB /* Pods-MBProgressHUD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77E5B2417F1FBC87E45C373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F688D411757806B7B5CEC5 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC39BF72AA16144881D6417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0DD238F56E2FB8F39CE8BFE /* AsyncButton.swift in Sources */,
+				875219D05FB9DAF2B2D4DA5C /* AsyncImageView.swift in Sources */,
+				6866325D9A6C6F9A6099C101 /* AutoTextView.swift in Sources */,
+				7CD1DFC31CDF93B4CDD76CDE /* BlurView.swift in Sources */,
+				EB00B6C599FA0FE3FAE03427 /* DesignableButton.swift in Sources */,
+				9A0437285C8403259064267B /* DesignableImageView.swift in Sources */,
+				3136C5C3FF0729DD487FD028 /* DesignableLabel.swift in Sources */,
+				4912951305AD2F5FC07C8C28 /* DesignableTabBarController.swift in Sources */,
+				8168B589B31BD620DFFCE7B2 /* DesignableTextField.swift in Sources */,
+				65CD8078FE6C7591ECD5D5DA /* DesignableTextView.swift in Sources */,
+				EC6C0D997181DF342AE8143D /* DesignableView.swift in Sources */,
+				79B7A34712842A0045D3EFE8 /* ImageLoader.swift in Sources */,
+				9DB9D37CC752F31703504D72 /* KeyboardLayoutConstraint.swift in Sources */,
+				201DC519EA7317F90E681765 /* LoadingView.swift in Sources */,
+				FE51AE0D1ED99796E2F9D260 /* Misc.swift in Sources */,
+				59A2D0E9B5FBDD991A6BC13D /* Pods-Spring-dummy.m in Sources */,
+				FC737DA9CA0038275B0BA6C8 /* SoundPlayer.swift in Sources */,
+				B516E2B241BA031A442E83B2 /* Spring.swift in Sources */,
+				B549A75544480CE5618EA849 /* SpringAnimation.swift in Sources */,
+				73D6AEB1161AF4369840FF99 /* SpringButton.swift in Sources */,
+				67F29B5CFBF85BD2F29CC1CD /* SpringImageView.swift in Sources */,
+				8118C5F0F106B2F0DDA3F92E /* SpringLabel.swift in Sources */,
+				FE2E6C1715A67332BA1730FF /* SpringTextField.swift in Sources */,
+				A1D5ACEAAF82519AE827FDDF /* SpringTextView.swift in Sources */,
+				C5454FBBC1C24406533BD303 /* SpringView.swift in Sources */,
+				BA80CE30F9648927B756E6A6 /* TransitionManager.swift in Sources */,
+				3C11AE4177FC41CD314DEE6F /* TransitionZoom.swift in Sources */,
+				AE3209FBA8D840E2E40A9623 /* UnwindSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E6F37020D1D6E921724ADED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KDEAudioPlayer";
+			target = 8E695A33D02882412A30EE89 /* Pods-KDEAudioPlayer */;
+			targetProxy = 538239A92742BBAB1AB3AE3D /* PBXContainerItemProxy */;
+		};
+		39C6C01F079890BCA7B81CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Spring";
+			target = 86A88C3944586399044560CC /* Pods-Spring */;
+			targetProxy = AD036793038B7ABE7CBE4442 /* PBXContainerItemProxy */;
+		};
+		9B18A3F9E7EC970F729BCF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MBProgressHUD";
+			target = C53AB09B22A4D17CC8B9DDF5 /* Pods-MBProgressHUD */;
+			targetProxy = 07B6A272B5DC58F178ADCF55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27080C62556FB319184A84A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209F7076A80D780B33138F0C /* Pods-Spring-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Spring/Pods-Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Spring/Pods-Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45038FE85C8D0FD705791D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF276F6680EC7FA53EBBCC04 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4735021BFE8AE78E8F5FC70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209F7076A80D780B33138F0C /* Pods-Spring-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Spring/Pods-Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Spring/Pods-Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79D06B96421B70417A40F799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73569022C0709BB8CF424CBF /* Pods-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8717BD40204126AB4B3D1A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73569022C0709BB8CF424CBF /* Pods-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MBProgressHUD/Pods-MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		896A742D84058D7A1789D799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A974BB88D738ADBFCE7BA39 /* Pods-KDEAudioPlayer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KDEAudioPlayer/Pods-KDEAudioPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-KDEAudioPlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KDEAudioPlayer/Pods-KDEAudioPlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KDEAudioPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B94955C94CDFEFA58570D138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A974BB88D738ADBFCE7BA39 /* Pods-KDEAudioPlayer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KDEAudioPlayer/Pods-KDEAudioPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-KDEAudioPlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KDEAudioPlayer/Pods-KDEAudioPlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KDEAudioPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E48703911782990391412850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EAA147FC171F74160017F0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED00E817553F25724443280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6E95E50A551733EFA0EFA4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		014D220BE609A79253AF6B0D /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D06B96421B70417A40F799 /* Debug */,
+				8717BD40204126AB4B3D1A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA01220285B8A8FBEF80986 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED00E817553F25724443280 /* Debug */,
+				45038FE85C8D0FD705791D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57108F45510960CDCA6003B5 /* Build configuration list for PBXNativeTarget "Pods-KDEAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896A742D84058D7A1789D799 /* Debug */,
+				B94955C94CDFEFA58570D138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE823C1CE6AFED3D28592329 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48703911782990391412850 /* Debug */,
+				EAA147FC171F74160017F0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD84ACC9FDFD9287BB16FE39 /* Build configuration list for PBXNativeTarget "Pods-Spring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27080C62556FB319184A84A3 /* Debug */,
+				4735021BFE8AE78E8F5FC70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9610576D1C914146176F69C0 /* Project object */;
+}
