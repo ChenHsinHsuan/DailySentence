@@ -8,26 +8,67 @@
 
 import UIKit
 import CoreData
+import MBProgressHUD
+import Fabric
+import Crashlytics
+
+
+var HUD = MBProgressHUD()
+
+
+var id = ""
+var author = ""
+var enSentence = "本日無提供英文句子"
+var cnSentence = "本日無提供中文句子"
+var imageURL = ""
+let reachability = Reachability.reachabilityForInternetConnection()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Fabric.with([Crashlytics()])
+        
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound , categories: nil))
+
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityChanged:", name: ReachabilityChangedNotification, object: reachability)
+        reachability.startNotifier()
+        
+        
+        downloadData()
+    
+
         return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        
+        downloadData()
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        self.saveContext()
+        
+        UIApplication.sharedApplication().cancelAllLocalNotifications();
+        
+        var localNotification:UILocalNotification = UILocalNotification()
+        localNotification.alertBody = "今天的佳句看過了嗎?"
+        localNotification.fireDate = NSDate(timeInterval: 86400, sinceDate: NSDate())
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        localNotification.repeatInterval = NSCalendarUnit.CalendarUnitDay
+        localNotification.category = "invite"
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -36,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        downloadData()
     }
 
     func applicationWillTerminate(application: UIApplication) {
@@ -106,6 +148,72 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+    
+    
+    
+    // MARK:網路變更
+    func reachabilityChanged(note: NSNotification) {
+        
+        let reachability = note.object as! Reachability
+        let vc = window?.rootViewController as? ViewController
+        
+        if reachability.isReachable() {
+            vc?.networkAlertView.hidden = true
+            if reachability.isReachableViaWiFi() {
+                println("Reachable via WiFi")
+            } else {
+                println("Reachable via Cellular")
+            }
+        } else {
+            println("Not reachable")
+            
+            vc?.networkAlertView.hidden = false
+        }
+    }
+    
+    
+    func downloadData(){
+        
+        //檢查是否連線
+        if(reachability.isReachable()){
+            //檢查是否已加入
+            if var bornDate = NSUserDefaults.standardUserDefaults().valueForKey("bornDate") as? String {
+                //已經有寫入加入的日期了
+            }else{
+                //寫入加入的日期
+                NSUserDefaults.standardUserDefaults().setValue(getDate(), forKey: "bornDate")
+            }
+            
+            //取得Web資料
+            callData()
+            
+            //檢查是否已經寫入資料庫過
+            // Create a new fetch request using the LogItem entity
+            let fetchRequest = NSFetchRequest(entityName: "CDSentence")
+            fetchRequest.predicate = NSPredicate(format: "id == %@ or createat == %@", argumentArray: [id, getDate()])
+            // Execute the fetch request, and cast the results to an array of LogItem objects
+            let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [CDSentence]
+            
+            if fetchResults?.count == 0{
+                let newSentence = NSEntityDescription.insertNewObjectForEntityForName("CDSentence", inManagedObjectContext:managedContext) as! CDSentence
+                newSentence.setValue(id, forKey: "id")
+                newSentence.setValue(imageURL, forKey: "url")
+                newSentence.setValue(author, forKey: "author")
+                newSentence.setValue(cnSentence, forKey: "cn")
+                newSentence.setValue(enSentence, forKey: "en")
+                newSentence.setValue(false, forKey: "favormk")
+                newSentence.setValue(getDate(), forKey: "createat")
+                
+                
+                var error: NSError?
+                if !managedContext.save(&error) {
+                    println("Could not save \(error), \(error?.userInfo)")
+                }
+                managedContext.save(&error)
+            }
+        }
+    }
+   
 }
 
