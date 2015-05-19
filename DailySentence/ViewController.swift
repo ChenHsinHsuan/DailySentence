@@ -165,13 +165,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.createAtLabel.text = theCDSentence.createat
         cell.favorButton.selected = theCDSentence.favormk.boolValue
         if(Reachability.isConnectedToNetwork()){
-            dispatch_async(dispatch_get_main_queue(), {
+//            dispatch_async(dispatch_get_main_queue(), {
+//                let url = NSURL(string: theCDSentence.url)
+//                let data = NSData(contentsOfURL: url!)
+//                if(data?.length > 0){
+//                    cell.authorImageView.image = UIImage(data: data!)
+//                }
+//            })
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                // do some task
                 let url = NSURL(string: theCDSentence.url)
                 let data = NSData(contentsOfURL: url!)
-                if(data?.length > 0){
-                    cell.authorImageView.image = UIImage(data: data!)
-                }
-            })
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    // update some UI
+                    if(data?.length > 0){
+                        cell.authorImageView.image = UIImage(data: data!)
+                    }
+                    });
+                });
         }else{
             cell.authorImageView.image = UIImage(named: "defaultmanager")
         }
