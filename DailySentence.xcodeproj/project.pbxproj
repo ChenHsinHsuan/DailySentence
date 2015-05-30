@@ -44,14 +44,14 @@
 /* Begin PBXFileReference section */
 		0FA255F4CE926F18EF77BE47 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7397AEFB300031E450D7FF63 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		8F11541B1AFF789F00BCA2F2 /* DailySentence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySentence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F11541B1AFF789F00BCA2F2 /* dailysentence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dailysentence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F11541F1AFF789F00BCA2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1154201AFF789F00BCA2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F1154231AFF789F00BCA2F2 /* DailySentence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailySentence.xcdatamodel; sourceTree = "<group>"; };
 		8F1154251AFF789F00BCA2F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F1154281AFF789F00BCA2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F11542A1AFF789F00BCA2F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8F1154331AFF789F00BCA2F2 /* DailySentenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailySentenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1154331AFF789F00BCA2F2 /* dailysentenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dailysentenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1154381AFF789F00BCA2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1154391AFF789F00BCA2F2 /* DailySentenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySentenceTests.swift; sourceTree = "<group>"; };
 		8F1154531AFF7A0000BCA2F2 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
@@ -115,8 +115,8 @@
 		8F11541C1AFF789F00BCA2F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F11541B1AFF789F00BCA2F2 /* DailySentence.app */,
-				8F1154331AFF789F00BCA2F2 /* DailySentenceTests.xctest */,
+				8F11541B1AFF789F00BCA2F2 /* dailysentence.app */,
+				8F1154331AFF789F00BCA2F2 /* dailysentenceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F11541A1AFF789F00BCA2F2 /* DailySentence */ = {
+		8F11541A1AFF789F00BCA2F2 /* dailysentence */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F11543D1AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "DailySentence" */;
+			buildConfigurationList = 8F11543D1AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "dailysentence" */;
 			buildPhases = (
 				0C1D855022D40083ACA25162 /* Check Pods Manifest.lock */,
 				8F1154171AFF789F00BCA2F2 /* Sources */,
@@ -230,14 +230,14 @@
 			);
 			dependencies = (
 			);
-			name = DailySentence;
+			name = dailysentence;
 			productName = DailySentence;
-			productReference = 8F11541B1AFF789F00BCA2F2 /* DailySentence.app */;
+			productReference = 8F11541B1AFF789F00BCA2F2 /* dailysentence.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F1154321AFF789F00BCA2F2 /* DailySentenceTests */ = {
+		8F1154321AFF789F00BCA2F2 /* dailysentenceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F1154401AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "DailySentenceTests" */;
+			buildConfigurationList = 8F1154401AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "dailysentenceTests" */;
 			buildPhases = (
 				8F11542F1AFF789F00BCA2F2 /* Sources */,
 				8F1154301AFF789F00BCA2F2 /* Frameworks */,
@@ -248,9 +248,9 @@
 			dependencies = (
 				8F1154351AFF789F00BCA2F2 /* PBXTargetDependency */,
 			);
-			name = DailySentenceTests;
+			name = dailysentenceTests;
 			productName = DailySentenceTests;
-			productReference = 8F1154331AFF789F00BCA2F2 /* DailySentenceTests.xctest */;
+			productReference = 8F1154331AFF789F00BCA2F2 /* dailysentenceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -285,8 +285,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F11541A1AFF789F00BCA2F2 /* DailySentence */,
-				8F1154321AFF789F00BCA2F2 /* DailySentenceTests */,
+				8F11541A1AFF789F00BCA2F2 /* dailysentence */,
+				8F1154321AFF789F00BCA2F2 /* dailysentenceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +420,7 @@
 /* Begin PBXTargetDependency section */
 		8F1154351AFF789F00BCA2F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F11541A1AFF789F00BCA2F2 /* DailySentence */;
+			target = 8F11541A1AFF789F00BCA2F2 /* dailysentence */;
 			targetProxy = 8F1154341AFF789F00BCA2F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -615,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F11543D1AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "DailySentence" */ = {
+		8F11543D1AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "dailysentence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F11543E1AFF789F00BCA2F2 /* Debug */,
@@ -624,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F1154401AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "DailySentenceTests" */ = {
+		8F1154401AFF789F00BCA2F2 /* Build configuration list for PBXNativeTarget "dailysentenceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F1154411AFF789F00BCA2F2 /* Debug */,

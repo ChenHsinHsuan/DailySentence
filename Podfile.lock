@@ -1,0 +1,19 @@
+PODS:
+  - Google-Mobile-Ads-SDK (7.2.2)
+  - KDEAudioPlayer (0.2.0)
+  - MBProgressHUD (0.9.1)
+  - Spring (1.0.3)
+
+DEPENDENCIES:
+  - Google-Mobile-Ads-SDK (~> 7.0)
+  - KDEAudioPlayer
+  - MBProgressHUD (~> 0.9.1)
+  - Spring (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 9561b27b8dd2ef861ee74b4c1ba77104c4c5414a
+  KDEAudioPlayer: 5031559da89cd2c18aef134b9a8d4649f6b3b7d1
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+
+COCOAPODS: 0.37.1
